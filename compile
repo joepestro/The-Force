@@ -1,0 +1,13 @@
+cd theforce
+cd chrome
+zip -r theforce ./*
+mv theforce.zip theforce.jar
+rm -rf content
+rm -rf locale
+rm -rf skin
+cd ..
+zip -r theforce ./*
+mv theforce.zip ../theforce.xpi
+cd chrome
+unzip theforce.jar
+rm theforce.jar

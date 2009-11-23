@@ -1,0 +1,8 @@
+content	theforce	jar:chrome/theforce.jar!/content/
+content	theforce	jar:chrome/theforce.jar!/content/ contentaccessible=yes
+locale	theforce	en-US	jar:chrome/theforce.jar!/locale/en-US/
+skin	theforce	classic/1.0	jar:chrome/theforce.jar!/skin/classic/
+
+overlay	chrome://browser/content/browser.xul	chrome://theforce/content/theforce-browser.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://theforce/skin/theforce.css
+

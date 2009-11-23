@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://theforce/skin/theforce.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://theforce/locale/theforce.dtd">
+
+<overlay id="theforce" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://theforce/content/theforce-browser.js" />
+
+	<commandset id="mainCommandSet">
+		<command id="theforce-toggle-cmd" oncommand="theforce.toggle();" />
+	</commandset>
+
+        <popup id="contentAreaContextMenu">
+                <menuseparator id="theforce-separator-cm" hidden="true" />
+		<menuitem id="theforce-toggle-menu-cm" label="Use The Force" command="theforce-toggle-cmd" hidden="false" />
+        </popup>
+
+        <menupopup id="menu_ToolsPopup">
+                <menuseparator id="theforce-separator-tm" hidden="true" insertbefore="devToolsSeparator" />
+		<menuitem id="theforce-toggle-menu-tm" label="Use The Force" command="theforce-toggle-cmd" hidden="false" />
+        </menupopup>
+
+</overlay>
